@@ -5,13 +5,13 @@ mu = 1.32712440018 * 10^11; % km^3 / s^2 (mu sun)
 max_v1 = 50; % (km/s) maximum delta v for rendez-vous
 max_v2 = 20; % (km/s) maximum delta v for fly-by
 
-[err,data1] = LoadData('C:\Users\Asus\Desktop\AE 502 Advanced Orbital Mechanics\HW\HW1_Final\Earth2Oumuamua.txt');
+[err,data1] = LoadData('--------------------------CHANGE THIS -----------------\HW1_Final\Earth2Oumuamua.txt');
   je =data1.jDate(:,:); % Julian dates earth
   jcalenum1=data1.calDate(:,:);
   T1 = datetime(jcalenum1,'ConvertFrom','datenum');
   re =data1.r(:,1:3);   % Position earth
   ve =data1.v(:,1:3);   % Velocity earth
-[err,data2] = LoadData('C:\Users\Asus\Desktop\AE 502 Advanced Orbital Mechanics\HW\HW1_Final\Oumuamua_arrival.txt');
+[err,data2] = LoadData('C:\--------------------------CHANGE THIS -----------------\HW1_Final\Oumuamua_arrival.txt');
   jcom =data2.jDate(:,:);% Julian dates comet
   jcalenum2=data2.calDate(:,:);
   T2 = datetime(jcalenum2,'ConvertFrom','datenum');
